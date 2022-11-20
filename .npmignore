@@ -1,0 +1,11 @@
+/.idea/
+/.github/
+/coverage/
+/tests/
+/.gitattributes
+/.gitignore
+/.npmignore
+/.npmrc
+/jest.config.js
+/tsconfig.json
+/package-lock.json

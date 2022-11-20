@@ -1,0 +1,23 @@
+{
+  "name": "@flying/create-sequence",
+  "version": "1.0.0",
+  "description": "Create sequence of values from given producer",
+  "scripts": {
+    "test": "jest ./tests",
+    "coverage": "jest --coverage --verbose --runInBand ./tests"
+  },
+  "author": "Alexander Grimalovsky <alexander.grimalovsky@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlyingDR/create-sequence.git"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.2.2",
+    "@types/jest": "^29.2.2",
+    "jest": "^29.2.2"
+  }
+}
