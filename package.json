@@ -1,5 +1,5 @@
 {
-  "name": "@flying/create-sequence",
+  "name": "create-sequence",
   "version": "1.0.0",
   "description": "Create sequence of values from given producer",
   "main": "index.js",
