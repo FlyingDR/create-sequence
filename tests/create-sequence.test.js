@@ -1,5 +1,8 @@
 'use strict';
 
+/** @typedef {import('./src/create-sequence').CreateSequence} CreateSequence */
+
+/** @type {CreateSequence} */
 const createSequence = require('../src/create-sequence');
 
 describe('Create sequence', () => {
