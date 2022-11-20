@@ -16,7 +16,7 @@
  *
  * @type {CreateSequence}
  */
-const createSequence = producer => {
+function createSequence(producer) {
     let firstValue;
     let firstValueTaken = false;
     let firstValueSent = false;
@@ -126,6 +126,6 @@ const createSequence = producer => {
         set: notAllowed,
         setPrototypeOf: notAllowed,
     });
-};
+}
 
 module.exports = createSequence;
