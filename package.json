@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Create sequence of values from given producer",
   "main": "index.js",
+  "types": "src/create-sequence.d.ts",
   "scripts": {
     "test": "jest ./tests",
     "coverage": "jest --coverage --verbose --runInBand ./tests"
