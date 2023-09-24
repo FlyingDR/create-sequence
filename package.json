@@ -1,6 +1,6 @@
 {
   "name": "create-sequence",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create sequence of values from given producer",
   "main": "index.js",
   "types": "src/create-sequence.d.ts",
