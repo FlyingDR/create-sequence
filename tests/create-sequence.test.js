@@ -139,6 +139,21 @@ describe('Create sequence', () => {
         expect(received).toEqual(['a', 'b', 'c']);
     });
 
+    test('Error thrown from producer should not be swallowed', () => {
+        const producer = function* () {
+            yield 'a';
+            yield 'b';
+            throw new Error('Thrown from producer');
+            // noinspection UnreachableCodeJS
+            yield 'c';
+        };
+        const sequence = createSequence(producer);
+        expect(sequence()).toEqual('a');
+        expect(sequence()).toEqual('b');
+        expect(() => sequence()).toThrow('Thrown from producer');
+        expect(sequence()).toBeUndefined();
+    });
+
     test('It is allowed to mix access of sequence values', () => {
         const sequence = createSequence(['a', 'b', 'c', 'd', 'e', 'f']);
         const received = [];
